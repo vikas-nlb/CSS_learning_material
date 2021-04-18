@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        .container{
+            height:auto;
+            width:100%;
+            border:1px solid black;
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .item{
+            height:200px;
+            width:200px;
+            border:1px solid cornflowerblue;
+            background-color: tomato;
+            margin: 10px;
+            padding: 5px;
+        }
+        #item-1{
+            flex-grow: 1;
+            order: 3;
+        flex-shrink: 2;
+        }
+        #item-2{
+            flex-shrink: 1;
+            flex-basis: 300px;
+        }
+        #item-3{
+            order: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item-1">One</div>
+        <div class="item" id="item-2">Two</div>
+        <div class="item" id="item-3">Three</div>
+        <div class="item" id="item-4">Four</div>
+        <div class="item" id="item-5">Five</div>
+        <div class="item" id="item-6">Six</div>
+    </div>
+</body>
+</html>

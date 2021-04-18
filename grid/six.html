@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+            'navbar navbar navbar navbar'
+            'aside section section section'
+            'footer footer footer footer';
+    }
+
+    .item {
+        border: 1px solid blueviolet;
+        background-color: blanchedalmond;
+    }
+
+    #navbar {
+        grid-area: navbar;
+        text-align: center;
+    }
+
+    #section {
+        grid-area: section;
+    }
+
+    #aside {
+        grid-area: aside;
+    }
+
+    #footer {
+        grid-area: footer;
+        text-align: center;
+    }
+
+    @media (max-width:300px) {
+        body {
+            background-color: tomato;
+        }
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'footer footer footer footer';
+        }
+
+        #aside {
+            display: none;
+        }
+
+    }
+
+    @media (min-width:300px) and (max-width:500px) {
+        body {
+            background-color: blueviolet;
+        }
+
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+        }
+
+        aside {
+            display: none;
+        }
+
+    }
+
+    @media (min-width:500px) and (max-width:800px) {
+        body {
+            background-color: darkgoldenrod;
+        }
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+        }
+
+    }
+
+    @media (min-width:800px) {
+        body {
+            background-color: rosybrown;
+        }
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home Profile Contact
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab assumenda modi tenetur voluptate, temporibus
+            vitae iure architecto quae at, ut, id doloremque non atque consequatur. Delectus provident deleniti fuga
+            atque?
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum dicta est, amet laborum cumque distinctio
+            inventore, rerum eius voluptatum, vel unde saepe quibusdam quos sequi doloremque modi veniam fugiat!
+        </div>
+        <div id="footer" class="item">
+            Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Eos vero quasi inventore!
+        </div>
+    </div>
+</body>
+
+</html>

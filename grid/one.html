@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+</head>
+<style>
+.container{
+    display:grid;
+    /* grid-template-columns: 2fr 3fr 2fr; fr is short form of frame */
+    grid-template-columns: repeat(2,auto);
+    grid-gap: 20px;
+}
+.item{
+    height:100px;
+    padding: 10px;
+    border:1px solid royalblue;
+    background-color: burlywood;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="item">Item number - 1</div>
+        <div class="item">Item number - 2</div>
+        <div class="item">Item number - 3</div>
+        <div class="item">Item number - 4</div>
+        <div class="item">Item number - 5</div>
+        <div class="item">Item number - 6</div>
+        <div class="item">Item number - 7</div>
+        <div class="item">Item number - 8</div>
+        <div class="item">Item number - 9</div>
+        <div class="item">Item number - 10</div>
+        <div class="item">Item number - 11</div>
+        <div class="item">Item number - 12</div>
+        <div class="item">Item number - 13</div>
+        <div class="item">Item number - 14</div>
+        <div class="item">Item number - 15</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+        .box{
+            border: 5px solid chocolate;
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            text-align: center;
+        }
+        #box1{
+            position: relative;
+            z-index: 10;
+            background-color: red;
+        }
+        #box2{
+            position: relative;
+            z-index: 20;
+            background-color: yellow;
+        }
+        #box3{
+            position: relative;
+            z-index: 30;
+            background-color:blue ;
+            text-shadow: cornflowerblue;
+        }
+        #box4{
+            position: relative;
+            z-index: 40;
+            background-color: chartreuse;
+            text-shadow: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">RED</div>
+    <div class="box" id="box2">YELLOW</div>
+    <div class="box" id="box3">BLUE</div>
+    <div class="box" id="box4">GREEN</div>
+</body>
+</html>

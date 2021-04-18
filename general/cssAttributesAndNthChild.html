@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes and Nth Child</title>
+</head>
+<style>
+    /*Attributes */
+    a[target]{
+        text-align: center;
+        font-size:74px;
+        background-color: aqua;
+    }
+    a[target='_self']{
+        color:red;
+    }
+
+    div{
+        width:50px;
+        margin: 10px;
+        height: 20dp;
+        border:1px solid red;
+        text-align: center;
+    }
+    /*nth child */
+    div:nth-child(even){
+        color: blueviolet;
+    }
+    div:hover{
+        background-color:rosybrown;
+    }
+</style>
+<body>
+    <a href="http://google.com" target="_blank">Google</a>
+    <a href="http://facebook.com" target="_self">Facebook</a>
+    <form method="submit">
+        <input type="text" name="Name"/>
+        <input type="password" name="Password"/>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="list-1">One</div>
+    <div id="list-2">Two</div>
+    <div id="list-3">Three</div>
+    <div id="list-4">Four</div>
+    <div id="list-5">Five</div>
+    <div id="list-6">Six</div>
+    <div id="list-7">Seven</div>
+    <div id="list-8">Eight</div>
+    <div id="list-9">Nine</div>
+    <div id="list-10">Ten</div>
+</body>
+</html>
